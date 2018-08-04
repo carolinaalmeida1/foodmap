@@ -43,15 +43,15 @@ const restaurantes = [
     "name": "Pop Vegan Food",
     "image": "assets/pop.png",
     "latitude": -23.5539487,
-    "longitude": -46.65767779999999,
+    "longitude": -46.6576778,
     "description": "Restaurante vegano em São Paulo, na região da Augusta. Comida boa com preço justo e pizzas irresistíveis. Democratizando a alimentação vegana.",
     "type": "vegana"
   },
   {
     "name": "Loving Hut Jardins",
     "image": "assets/loving.jpg",
-    "latitude": -23.5539487,
-    "longitude": -46.65767779999999,
+    "latitude": -23.5597267,
+    "longitude": -46.6639738,
     "description": "Outpost of a vegan counter-serve chain with Asian-accented  menus that vary by location.",
     "type": "vegana"
   },

@@ -6,10 +6,12 @@
 }
 
 body {
-  background-color: white;
-  color: orange;
+  background-color: orange;
+  overflow-x: hidden;
+  color: white;
 }
 
+/* Header */
 .box-title {
   height: 10vh;
   margin: 5vh 0 0 0;
@@ -20,27 +22,74 @@ body {
 }
 
 .style-border {
-  border: 0;
-  height: 0;
   width: 80%;
-  border-top: 2px solid orange;
-  border-bottom: 2px solid orange;
+  border-top: 4px solid white;
 }
 
-/* .filter {
-  margin-top: 20px;
-  margin-bottom: 20px;
-} */
-
+/* Map */
 #map {
-  height: 100%;
-}
-
-.map-google {
+  height: 40vh;
   margin: 5vh;
 }
 
-button {
-  border: 2px solid orange;
-  background-color: white;
+/* Filter */
+.title-filter {
+  font-weight: bold;
+}
+
+.navbar-form {
+  display: flex;
+  justify-content: center;
+}
+
+/* Results */
+.all-images {
+  display: flex;
+  justify-content: space-between;
+  display: block;
+  height: 30vh;
+  margin: 10px;
+}
+
+.all-images a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  outline: none;
+  border-radius: 0.5em;
+}
+
+.cover {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 165, 0, 0.8);
+  opacity: 0;
+  transition: .4s;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/* Modal */
+.modal-header, .modal-body, .close {
+  color: orange;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.food-order {
+  background-color: orange;
+  color: white;
+  font-size: 0.8em;
 }
