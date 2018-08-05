@@ -11,9 +11,9 @@ $(document).ready(function() {
 
   function showAllRest() {
     $.each(allRest, function(i) {
-      var restThumb = `<li class="all-images col-xs-6 col-sm-4 col-md-3"><a id="${allRest[i]}" href="#" data-toggle="modal" data-target="#infoModal">
+      var restThumb = `<li class="all-images col-12 col-sm-12 col-md-3"><a id="${allRest[i]}" href="#" data-toggle="modal" data-target="#infoModal">
                         <span class="cover">
-                          <span>${restaurantes[allRest[i]].name}</span>
+                          <span class="name">${restaurantes[allRest[i]].name}</span>
                           </span>
                         </a>
                       </li>`;
@@ -52,7 +52,6 @@ $(document).ready(function() {
   }
 
 });
-
 
 // Map
 var map;

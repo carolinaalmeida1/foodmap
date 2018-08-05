@@ -46,18 +46,21 @@
 }
 
 /* Results */
-.all-images {
+ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.all-images {
   display: block;
   height: 30vh;
-  margin: 10px;
+  margin: 4vh;
 }
 
 .all-images a {
-  height: 100%;
   display: flex;
-  justify-content: center;
+  height: 100%;
   background-size: cover;
   background-position: center;
   cursor: pointer;
@@ -72,7 +75,7 @@
   justify-content: center;
   flex-flow: column;
   height: 100%;
-  width: 100%;
+  width: 92%;
   background-color: rgba(255, 165, 0, 0.8);
   opacity: 0;
   transition: .4s;
@@ -93,6 +96,5 @@
 
 .food-order {
   background-color: orange;
-  /* color: white; */
   font-size: 0.8em;
 }
