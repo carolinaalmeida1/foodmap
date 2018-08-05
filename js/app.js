@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('.home').delay('2000').fadeIn('slow')
+
   var searchRest = $('.search-rest');
   var allRest = Object.keys(restaurantes);
 
@@ -45,9 +47,12 @@ $(document).ready(function() {
   // Modal
   function fillModal() {
     $('.modal-title').text(restaurantes[$(this).parent().attr('id')].name);
+    $('.img-modal').text(restaurantes[$(this).parent().attr('id')].image);
     $('.descr').text(restaurantes[$(this).parent().attr('id')].description);
   }
+
 });
+
 
 // Map
 var map;

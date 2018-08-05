@@ -2,13 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
   font-family: 'Raleway', sans-serif;
 }
 
-body {
+.preview,
+.home {
   background-color: orange;
-  overflow-x: hidden;
   color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.home {
+  display: none;
 }
 
 /* Header */
@@ -30,11 +38,6 @@ body {
 #map {
   height: 40vh;
   margin: 5vh;
-}
-
-/* Filter */
-.title-filter {
-  font-weight: bold;
 }
 
 .navbar-form {
@@ -90,6 +93,6 @@ body {
 
 .food-order {
   background-color: orange;
-  color: white;
+  /* color: white; */
   font-size: 0.8em;
 }

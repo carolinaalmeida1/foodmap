@@ -11,44 +11,47 @@
   </head>
   <body>
 
+    <div class="preview col-sm-12 d-flex justify-content-center align-items-center">
+      <h1 class="font-weight-bold text-white">Foodmap</h1>
+    </div>
+
+    <main class="home">
     <!-- Header -->
-    <section class="container-fluid">
-      <div class="row d-flex justify-content-center align-itemns-center">
-        <div class="box-title col-xs-12 col-sm-12 col-md-12">
-          <h1 class="title text-center font-weight-bold">Foodmap</h1>
+      <section class="container-fluid">
+        <div class="row d-flex justify-content-center align-itemns-center">
+          <div class="box-title col-xs-12 col-sm-12 col-md-12">
+            <h1 class="title text-center text-white font-weight-bold">Foodmap</h1>
+          </div>
+          <hr class="style-border">
         </div>
-        <hr class="style-border">
-      </div>
-    </section>
-
+      </section>
     <!-- Map -->
-    <section class="map-google container-fluid">
-      <div class="row d-flex justify-content-center">
-        <div id="map" class="col-xs-12 col-sm-12 col-md-12">
+      <section class="map-google container-fluid">
+        <div class="row d-flex justify-content-center">
+          <div id="map" class="col-xs-12 col-sm-12 col-md-12">
+          </div>
         </div>
-      </div>
-    </section>
-
+      </section>
     <!-- Filter -->
-    <section class="filter container-fluid">
-      <h3 class="text-center font-weight-bold">Restaurantes próximos</h3>
-      <form class="navbar-form">
-        <div class="form-group">
-          <input type="text" class="search-rest form-control" placeholder="Buscar">
-        </div>
-      </form>
-    </section>
-
+      <section class="filter container-fluid">
+        <h3 class="text-center font-weight-bold text-white">Restaurantes próximos</h3>
+        <form class="navbar-form">
+          <div class="form-group">
+            <input type="text" class="search-rest form-control" style="min-width:100vh;" placeholder="Buscar">
+          </div>
+        </form>
+      </section>
     <!-- Results -->
-    <section class="search-results">
-      <div class="row">
-        <ul class="list-unstyled col-xs-12 col-sm-12 col-md-12">
-        </ul>
-      </div>
-    </section>
+      <section class="search-results">
+        <div class="row">
+          <ul class="list-unstyled col-xs-12 col-sm-12 col-md-12">
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <!-- Modal -->
-    <section class="col-xs-12 col-sm-12 col-md-12 d-flex justify-content-center">
+    <div class="col-xs-12 col-sm-12 col-md-12 d-flex justify-content-center">
       <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -58,21 +61,20 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body clearfix">
-              <iframe frameborder="0" src="">
-              </iframe>
+            <div class="modal-body">
+              <a><img src="" class="img-modal"/></a>
               <div class="col-sm-12 col-md-12 p-0">
                 <h5 class="description-title font-weight-bold">Descrição</h5>
                 <p class="descr"></p>
               </div>
             </div>
             <div class="modal-footer">
-              <button type="button" class="food-order btn text-uppercase font-weight-bold" data-dismiss="modal">Matar a fome agora</button>
+              <button type="button" class="food-order btn text-white text-uppercase font-weight-bold" data-dismiss="modal">Matar a fome agora</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" crossorigin="anonymous"></script>
