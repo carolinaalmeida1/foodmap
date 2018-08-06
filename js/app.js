@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.home').delay('2000').fadeIn('slow')
+  $('.home').delay('3000').fadeIn('slow')
 
   var searchRest = $('.search-rest');
   var allRest = Object.keys(restaurantes);
@@ -26,7 +26,6 @@ $(document).ready(function() {
   function showCover() {
     $(this).css('opacity', '1');
   }
-
   function hideCover() {
     $(this).css('opacity', '0');
   }
@@ -47,8 +46,9 @@ $(document).ready(function() {
   // Modal
   function fillModal() {
     $('.modal-title').text(restaurantes[$(this).parent().attr('id')].name);
-    $('.img-modal').text(restaurantes[$(this).parent().attr('id')].image);
+    $('.type-title').text(restaurantes[$(this).parent().attr('id')].type);
     $('.descr').text(restaurantes[$(this).parent().attr('id')].description);
+    $('.img-modal').text(restaurantes[$(this).parent().attr('id')].image);
   }
 
 });
