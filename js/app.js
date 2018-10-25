@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('.home').delay('3000').fadeIn('slow')
+  $('.home').delay('3000').fadeIn('slow');
 
   var searchRest = $('.search-rest');
   var allRest = Object.keys(restaurantes);
